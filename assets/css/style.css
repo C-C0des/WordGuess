@@ -1,0 +1,46 @@
+body {
+	background-color: black;
+}
+
+#gameheader{
+    color:yellow;
+    text-align: center;
+}
+#gameheaderimage{
+    height:380px;
+    width:100%;
+}
+
+.container{
+    border: 10px dotted white;
+    margin:80px auto;
+}
+
+.gamebox {
+	border: 5px solid #ffd700;
+	height: 500px;
+    padding-top: 15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#instructions{
+    color:#ffd700;
+}
+
+.gameimagebox{
+    border:5px solid #ffd700;
+    height:500px;
+    padding-top:15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+p {
+	color: white;
+	text-align: center;
+}
+.container{
+    border: 10px dotted white;
+    margin:50px auto;
+}

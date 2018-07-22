@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+
+    <!--Container for entire game code-->
+     <div class="container">
+         <header>
+             <h1 id = "gameheader">HANGMAN - JS JUGGERNAUTS</h1>
+         </header>
+
+         <!--Game Banner/'Header'Row-->
+         <div class="row">
+             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                 <img class="img-responsive center-block" id = "gameheaderimage" src="assets/images/wordguessgameheader.gif" />
+             </div>
+         </div>
+
+         <!--Game Row-->
+         <div class = "container-fluid nested-container">
+         
+         <div class="row">
+
+            <div class="col-md-4 gameimagebox">
+                 <img class="img-responsive center-block" src="assets/images/game.jpg">
+             </div>
+       
+              <!--Image Column-->
+              <div class="col-md-4 gameimagebox">
+                 <img class="img-responsive center-block" src="assets/images/game.jpg">
+             </div>
+
+
+
+             <!--Game Column-->
+             <div class="col-md-4 gamebox">
+                 <p>INSTRUCTIONS</p>
+                 <p id="instructions">Press any key to get started! Guess... </p>
+                 <div> 
+                     <p>WINS</p>
+                     <p class = "game-text" id = "wins"></p>
+                 </div>
+                 <div>
+                     <p>CURRENT WORD</h3>
+                     <p id = "current-word"></p>
+                 </div>
+                 <div>
+                     <p>NUMBER OF GUESS REMAINING</p>
+                     <p id = "guesses-remaining"></p>
+                 </div>
+                 <div>
+                     <p>LETTERS ALREADY GUESSED<p>
+                     <p id = "letters-guessed"></P>
+                 </div>
+             </div>
+         </div>
+
+        </div>
+        
+
+     </div>
+     
+        
+        <script type="text/javascript" src="assets/javascript/hangman.js"></script>
+</body>
+</html>
