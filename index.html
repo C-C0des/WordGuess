@@ -5,68 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Word Guess</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
 
     <!--Container for entire game code-->
      <div class="container">
+
          <header>
              <h1 id = "gameheader">HANGMAN - JS JUGGERNAUTS</h1>
+
+              <!--Game Banner/'Header'Row-->
+              <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <img class="img-responsive center-block" id = "gameheaderimage" src="assets/images/wordguessgameheader.gif" />
+                    </div>
+             </div>
+
          </header>
 
-         <!--Game Banner/'Header'Row-->
-         <div class="row">
-             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                 <img class="img-responsive center-block" id = "gameheaderimage" src="assets/images/wordguessgameheader.gif" />
-             </div>
-         </div>
 
-         <!--Game Row-->
-         <div class = "container-fluid nested-container">
-         
-         <div class="row">
-             <!--Instructions Column-->
-             <div class="col-md-4 gamebox">
-                 <p>INSTRUCTIONS</p>
-                 <p id="instructions">Press any key to get started! Guess... </p>
-                 <div> 
-                    <p>WINS</p>
-                    <p class = "game-text" id = "wins"></p>
-                 </div>  
-             </div>
+         <div class = "container-fluid nestedcontainer">
+              
+             <!--Game Row-->
+             <div class="row align-items-center">
 
-             <!--Image Column-->
-            <div class="col-md-4 gamebox">
-                 <img class="img-responsive center-block" src="assets/images/js.png">
-             </div>
-       
+                 <!--Game Instructions Column-->
+                 <div class = "col-md-4 text-center gamebox">
+                     <p>INSTRUCTIONS</p>
+                     <br>
+                     <p id="instructions">Press any key to get started! Guess... </p>
+                     <br>
+                     <p> CURRENT WORD</p>
+                     <br>
+                     <span id = "placeholders"></span>
+                     <br>
+                     <p>LETTERS ALREADY GUESSED</p>
+                     <span id = "guessed-letters"></span>
+                     <br>
+                 </div> <!--Instructions Column End-->
 
-             <!--Game Column-->
-             <div class="col-md-4 gamebox">         
-                 <div>
-                     <p>CURRENT WORD</h3>
-                     <p id = "current-word"></p>
-                 </div>
-                 <div>
+                 <!--Game Center Image-->
+                 <div class = "col-md-4 text-center gamebox">
+                     <img class="img-responsive center-block" src="assets/images/js.png">
+                 </div> <!--Game Image column ends-->
+
+                 <!--Game column-->
+                 <div class = "col-md-4 text-center gamebox">
                      <p>NUMBER OF GUESS REMAINING</p>
-                     <p id = "guesses-remaining"></p>
-                 </div>
-                 <div>
-                     <p>LETTERS ALREADY GUESSED<p>
-                     <p id = "letters-guessed"></P>
-                 </div>
-             </div>
-         </div>
+                      <span id = "guessleft"></span>
+                     <br>
+                     <p> WINS</p>
+                     <span id = "wins"></span>
+                     <br>
+                     <p>LOSSES</p>
+                     <span id = "losses"></span>
+                     <br>
+                     <button type="submit" class="btn btn-default" id="submit-button">New Game</button>
+                 </div> <!--Actual game column Ends-->
 
-        </div>
+             </div> <!--Game Row ends-->
+
+         </div> <!--Nested container Ends-->
+
+
+     </div> <!--Container Ends-->
         
 
-     </div>
      
         
-        <script type="text/javascript" src="assets/javascript/hangman.js"></script>
+     <script type="text/javascript" src="assets/javascript/game.js"></script>
+
 </body>
 </html>
+
+
+

@@ -18,20 +18,17 @@ body {
 
 .gamebox {
 	border: 5px solid #ffd700;
-	height: 500px;
+	height: 380px;
     padding-top: 15px;
     margin-top:30px;
     margin-bottom:30px;
 }
 
-
-.gameimageshorterbox{
-    border:5px solid #ffd700;
-    height:250px;
-    padding-top:15px;
-    margin-top:30px;
-    margin-bottom:50px;
+#instructions{
+    color:#ffd700;
 }
+
+
 
 #instructions{
     color:#ffd700;
@@ -44,4 +41,9 @@ p {
 .container{
     border: 10px dotted white;
     margin:50px auto;
+}
+
+.btn-default {
+    color:black;
+    background:#ffd700;
 }
