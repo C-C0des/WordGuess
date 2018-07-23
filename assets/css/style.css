@@ -24,16 +24,17 @@ body {
     margin-bottom:30px;
 }
 
-#instructions{
-    color:#ffd700;
-}
 
-.gameimagebox{
+.gameimageshorterbox{
     border:5px solid #ffd700;
-    height:500px;
+    height:250px;
     padding-top:15px;
     margin-top:30px;
-    margin-bottom:30px;
+    margin-bottom:50px;
+}
+
+#instructions{
+    color:#ffd700;
 }
 
 p {
