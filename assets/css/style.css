@@ -19,7 +19,15 @@ body {
 
 .gamebox {
 	border: 5px solid #ffd700;
-	height: 380px;
+	height: 100px;
+    padding-top: 15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.insgamebox {
+	border: 5px solid #ffd700;
+	height: 200px;
     padding-top: 15px;
     margin-top:30px;
     margin-bottom:30px;
