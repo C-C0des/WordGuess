@@ -1,8 +1,11 @@
  //JS HANGMAN WITH DETAILED COMMENTS AND PSEUDOCODE FOR FUTURE REFERENCE AND UNDERSTANDING
 
- // ////////////////////VARIABLES /////////////////////
+ //DOM ELEMENTS
+ 
+ 
+ // ////////////////////VARIABLES/////////////////////
 
- // COMPUTER CHOOSES RANDOM WORD FROM A WORD BANK
+ // WORD BANK
  //Word Bank Array - Words the computer chooses and the user tries to guess. 
  /* Created an array for the word bank. I set the array to the variable wordBank */
  var wordBank = [
@@ -64,3 +67,4 @@
  var guessesLeft = 8;
 
  
+//FUNCTIONS 
