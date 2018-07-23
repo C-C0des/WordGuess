@@ -1,5 +1,6 @@
 body {
-	background-color: black;
+    background-color: black;
+    color:white;
 }
 
 #gameheader{
@@ -38,6 +39,8 @@ p {
 	color: white;
 	text-align: center;
 }
+
+
 .container{
     border: 10px dotted white;
     margin:50px auto;
@@ -46,4 +49,6 @@ p {
 .btn-default {
     color:black;
     background:#ffd700;
+    font-size:18px;
+    font-weight:bold;
 }

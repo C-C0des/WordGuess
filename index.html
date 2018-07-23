@@ -26,7 +26,8 @@
 
          </header>
 
-
+         <!--Note to self: margins for row not working 
+         Remove nested container and reset margins -->
          <div class = "container-fluid nestedcontainer">
               
              <!--Game Row-->
@@ -38,12 +39,15 @@
                      <br>
                      <p id="instructions">Press any key to get started! Guess... </p>
                      <br>
-                     <p> CURRENT WORD</p>
+                     <p> CURRENT WORD
+                         <br/>
+                         <span id = "placeholders">___ ___ ___ ___ ___</span>
+                     </p>
                      <br>
-                     <span id = "placeholders"></span>
-                     <br>
-                     <p>LETTERS ALREADY GUESSED</p>
-                     <span id = "guessed-letters"></span>
+                     <p> LETTERS ALREADY GUESSED
+                         <br>
+                         <span id = "guessed-letters"></span>
+                     </p>
                      <br>
                  </div> <!--Instructions Column End-->
 
@@ -54,14 +58,11 @@
 
                  <!--Game column-->
                  <div class = "col-md-4 text-center gamebox">
-                     <p>NUMBER OF GUESS REMAINING</p>
-                      <span id = "guessleft"></span>
+                     <p>NUMBER OF GUESS REMAINING : <span id = "guessleft">0</span> </p>
                      <br>
-                     <p> WINS</p>
-                     <span id = "wins"></span>
+                     <p> WINS: <span id = "wins">0</span> </p>
                      <br>
-                     <p>LOSSES</p>
-                     <span id = "losses"></span>
+                     <p>LOSSES: <span id = "losses">0</span> </p>
                      <br>
                      <button type="submit" class="btn btn-default" id="submit-button">New Game</button>
                  </div> <!--Actual game column Ends-->
