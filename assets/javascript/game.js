@@ -1,3 +1,5 @@
+var alphabet = "a b c d e f g h i j k l m n o p q r s t u v w x y z".split("");
+
 
 var $newGameButton = document.getElementById('new-game-button');
 var $placeholders = document.getElementById('placeholders'); 
@@ -18,16 +20,21 @@ var wordBank = [ 'alert',
       'scope',
       'events', 
       'arguments',
-]
+];
 
 var wins = 0;
 var losses = 0;
 var guessesLeft = 8;
+
 var gameRunning = false;
-var pickedWord = '';
-var pickedWordPlaceholderArr = [];
+
+var pickedWord = "";
+var lettersInPickedWord = [];
+var numBlanks = 0;
 var guessedLetterBank = [];
 var incorrectLetterBank = [];
+
+
 
 function newGame() {
   gameRunning= true;
@@ -37,6 +44,7 @@ function newGame() {
   pickedWordPlaceholderArr = [];		
 
   pickedWord = wordBank[Math.floor(Math.random() * wordBank.length)];
+
   for(var i = 0; i < pickedWord.length; i++){
     if (pickedWord[i] === ' ') {
       pickedWordPlaceholderArr.push(' ');
