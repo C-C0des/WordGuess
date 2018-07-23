@@ -1,25 +1,23 @@
 
-var $newGameButton = document.getElementById("new-game-button");
-var $placeholders = document.getElementById("placeholders"); 
-var $guessedLetters = document.getElementById("guessed-letters"); 
-var $guessesLeft = document.getElementBYId ("guesses-left"); 
-var $wins = document.getElementById ("wins"); 
-var $losses = document.getElementByID ("losses");
+var $newGameButton = document.getElementById('new-game-button');
+var $placeholders = document.getElementById('placeholders'); 
+var $guessedLetters = document.getElementById('guessed-letters'); 
+var $guessesLeft = document.getElementBYId ('guesses-left'); 
+var $wins = document.getElementById ('wins'); 
+var $losses = document.getElementByID ('losses');
 
 
-var wordBank = [
-  "array",
-  "boolean", 
-  "console", 
-  "variable", 
-  "string", 
-  "prompt",
-  "objects", 
-  "conditionals", 
-  "concatenation",
-  "scope",
-  "events", 
-  "arguments",
+var wordBank = [ 'alert',
+      'boolean', 
+      'console', 
+      'variable', 
+      'string', 
+      'prompt',
+      'conditionals', 
+      'concatenation',
+      'scope',
+      'events', 
+      'arguments',
 ]
 
 var wins = 0;
@@ -39,9 +37,9 @@ function newGame() {
   pickedWordPlaceholderArr = [];		
 
   pickedWord = wordBank[Math.floor(Math.random() * wordBank.length)];
-  for(var i = 0; i <pickedWord.length;i++){
-    if (pickedWord[i] === '') {
-      pickedWordPlaceholderArr.push('');
+  for(var i = 0; i < pickedWord.length; i++){
+    if (pickedWord[i] === ' ') {
+      pickedWordPlaceholderArr.push(' ');
     } else{
       pickedWordPlaceholderArr.push('_');
     }
