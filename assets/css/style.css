@@ -7,6 +7,7 @@ body {
     color:yellow;
     text-align: center;
 }
+
 #gameheaderimage{
     height:380px;
     width:100%;
@@ -14,7 +15,26 @@ body {
 
 .container{
     border: 10px dotted white;
-    margin:80px auto;
+    margin:40px;
+}
+
+
+.insgamebox {
+	border: 5px solid #ffd700;
+	height: 200px;
+    padding-top: 15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+
+#new-game-button {
+    color:black;
+    background:#ffd700;
+    font-size:20px;
+    font-weight:bold;
+    border:none;
+    cursor: pointer;
 }
 
 .gamebox {
@@ -25,34 +45,13 @@ body {
     margin-bottom:30px;
 }
 
-.insgamebox {
-	border: 5px solid #ffd700;
-	height: 200px;
-    padding-top: 15px;
-    margin-top:30px;
-    margin-bottom:30px;
-}
 
-#instructions{
-    color:#ffd700;
-}
-
-
-
-#instructions{
-    color:#ffd700;
-}
 
 p {
 	color: white;
 	text-align: center;
 }
 
-
-.container{
-    border: 10px dotted white;
-    margin:50px auto;
-}
 
 .btn-default {
     color:black;

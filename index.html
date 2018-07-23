@@ -7,7 +7,7 @@
     <title>Word Guess</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
 </head>
 <body>
 
@@ -31,11 +31,12 @@
 
              <div class = "col-12  col-md-12 insgamebox">
                   <h3>INSTRUCTIONS</h3>
-                 <button type="submit" class="btn btn-default" id="submit-button">New Game</button>
+                  <p>Press any key to start. When game is over, click the button to start a new round.</p>
+                 <button id="new-game-button">New Game</button>
              </div>
         </div>
          
-        <div class = "row text-center">
+        <div class = "row text-center" id = "placeholder-section">
              <div class = "col-12  col-md-6  gamebox">
                  <h3>CURRENT WORD 
                      <br/>
@@ -75,12 +76,11 @@
 
 
      </div> <!--Container Ends-->
-        
 
+
+     <script src="assets/javascript/game.js"></script>
      
-        
-     <script type="text/javascript" src="assets/javascript/game.js"></script>
-
+  
 </body>
 </html>
 
