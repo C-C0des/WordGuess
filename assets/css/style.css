@@ -21,7 +21,7 @@ body {
 
 .insgamebox {
 	border: 5px solid #ffd700;
-	height: 200px;
+	height: 160px;
     padding-top: 15px;
     margin-top:30px;
     margin-bottom:30px;
@@ -33,9 +33,20 @@ body {
     background:#ffd700;
     font-size:20px;
     font-weight:bold;
-    border:none;
+    border:black;
     cursor: pointer;
 }
+
+#new-game-button:active {
+    color:#ffd700;
+    background:black;
+    font-size:20px;
+    font-weight:bold;
+    border:black;
+    cursor: pointer;
+}
+
+
 
 .gamebox {
 	border: 5px solid #ffd700;
@@ -45,6 +56,13 @@ body {
     margin-bottom:30px;
 }
 
+.wordgamebox {
+	border: 5px solid #ffd700;
+	height: 150px;
+    padding-top: 15px;
+    margin-top:30px;
+    margin-bottom:30px;
+}
 
 
 p {
@@ -52,11 +70,15 @@ p {
 	text-align: center;
 }
 
-
 .btn-default {
     color:black;
     background:#ffd700;
     font-size:18px;
     font-weight:bold;
     cursor: pointer;
+}
+
+#placeholders{
+    letter-spacing: 8px;
+    font-size:20px;
 }
