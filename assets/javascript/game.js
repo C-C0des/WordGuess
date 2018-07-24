@@ -1,7 +1,4 @@
-// GLOBAL VARIABLES (Accessible by all functions)
-// ==================================================================================================
 
-// Array of Word Options (all lowercase)
 var wordsList = [
   "alert",
   "boolean",
