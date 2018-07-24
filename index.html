@@ -1,90 +1,60 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Word Guess</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">  
-   <script src = "assets/javascript/game.js"></script>
-
-</head>
-<body>
-
-    <!--Container for entire game code-->
-     <div class="container">
-
-         <header>
-             <h1 id = "gameheader">HANGMAN - JS JUGGERNAUTS</h1>
-
-              <!--Game Banner/'Header'Row-->
-              <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                        <img class="img-responsive center-block" id = "gameheaderimage" src="assets/images/wordguessgameheader.gif" />
-                    </div>
-             </div>
-
-         </header>
-         
-         <!--Instructions Row-->
-         <div class = "row text-center"> 
-
-             <div class = "col-12  col-md-12 insgamebox">
-                  <h3>INSTRUCTIONS</h3>
-                  <p>Press any key to start. When game is over, click the button to start a new round.</p>
-                 <button id="new-game-button":active > New Game</button>
-             </div>
-        </div>
-         
-        <div class = "row text-center" id = "placeholder-section">
-             <div class = "col-12  col-md-6 wordgamebox">
-                 <h3>CURRENT WORD
-                     <br/>
-                    <span id = "placeholders">_ _ _ _ _ _ _ _ _ _ _</span>
-                 </h3>
-             </div>
-
-             <div class = "col-12  col-md-6 text-center wordgamebox">
-                 <h3>INCORRECT GUESSES
-                     <br/>
-                     <span id = "guessed-letters"></span>
-                </h3>
-             </div>
-        </div>
-
-        <div class = "row text-center">
-            <div class = "col-md-4 gamebox">
-                <h3> 
-                    GUESSES LEFT: <span id = "guesses-left">0</span>
-                </h3>
-            </div>
-            <div class = "col-md-4 gamebox">
-                    <h3> 
-                        WINS: <span id = "wins">0</span>
-                    </h3>
-            </div>
-            <div class = "col-md-4 gamebox">
-                    <h3> 
-                        LOSSES: <span id = "losses">0</span>
-                    </h3>
-            </div>
-
-        </div>
-
-     
-                 
-
-
-     </div> <!--Container Ends-->
-
-     <script src = "assets/javascript/gametwo.js"></script>
-
-     
+  <meta charset="UTF-8">
+  <title>Hangman Game</title>
   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel = "stylesheet" href = "assets/css/style.css">
+</head>
+
+<body>
+  
+  
+  <div class="container">
+  
+             <div class = "row">
+                <div class = "col-lg-12 text-center"> 
+                     <h1 id = "gameheader">JS JUGGERNAUTS - WORD GUESS</h1>
+                    <img class = "img-responsive center-block" id = "gameheaderimage"src="assets/images/wordguessgameheader.gif">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 gamebox">
+                     <h3>Word Guess</h3>
+                     <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+                </div>
+             </div>
+  
+            <div class="row">
+                 <div class="col-lg-12 gamebox">
+                       <h3>Wrong Guesses: </h3> <span id="wrong-guesses"></span>
+                </div>
+           </div>
+
+          <div class="row ">
+                <div class="col-md-4 col-md-offset-4 gamebox">
+                   <h3>Guesses Left: </h3> <span id="guesses-left">9</span>
+              </div>
+      
+      
+               <div class="col-md-4 col-md-offset-4 gamebox">
+                  <h3>Wins: </h3> <span id="win-counter">0</span>
+              </div>
+       
+   
+               <div class="col-md-4 col-md-offset-4 gamebox">
+                  <h3>Losses: </h3> <span id="loss-counter">0</span>
+               </div>
+          </div>
+
+  </div>
+
+  
+  <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
-
-
-
