@@ -1,20 +1,29 @@
-body{
-    background-color: black;
+#masthead{
+    background:lightskyblue;
+    color: white;
+    padding:80px;
+    margin-bottom:40px;
+}
+
+
+
+.hangmangamebox{
+    color:black;
+    text-align: center;
+    margin:auto; 
+    margin-bottom:80px;
+    width:70%;
+    height:300px;
+    padding:40x;  
+    padding-top:20px;
+}
+
+footer{
+    background:lightskyblue;
+    position:fixed;
+    width:100%;
+    bottom:0;
+    padding:10px;
     color:white;
-}
-
-.container{
-    border:10px dotted white;
-    padding:30px;
-}
-#gameimageheader {
-    height:150px;
-}
-
-.gamebox{
-    border:5px solid #ffd700;
-    margin-top:10px;
-    margin-bottom:6px;
-    margin-left:3px;
-    margin-right:3px;
+    text-align: center;
 }

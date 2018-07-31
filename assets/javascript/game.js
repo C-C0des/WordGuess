@@ -8,7 +8,7 @@ var wordBank = [
   "prompt",
   "conditionals",
   "scope",
-  "concatenations"
+  "concatenation"
 ];
 
 
@@ -87,7 +87,7 @@ function roundComplete() {
   if (guessedLetters.toString() === correctGuesses.toString()) {
   
     win++;
-    alert("You win!");
+    swal("You win!");
 
     document.getElementById("win-counter").innerHTML = win;
     startGame();
@@ -95,7 +95,7 @@ function roundComplete() {
 
   else if (maxGuesses === 0) {
     loss++;
-    alert("You lose!");
+    swal("You lose!");
 
     document.getElementById("loss-counter").innerHTML = loss;
     startGame();

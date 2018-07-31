@@ -4,62 +4,39 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Hangman Game</title>
-  
+  <title>Word Guess</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <link rel = "stylesheet" href = "assets/css/style.css">
 </head>
 
 <body>
-  
-  
-  <div class="container">
-  
-             <div class = "row">
-                <div class = "col-lg-12  col-md-12 text-center"> 
-                     <h1 id = "gameheader">JS JUGGERNAUTS - WORD GUESS</h1>
-                    <img class = "img-responsive center-block" id = "gameheaderimage"src="assets/images/wordguessgameheader.gif">
-                </div>
-            </div>
+     <header id = "masthead">
+         <h1 class = "text-center" id = "hangmanheader" > 
+             Hangman &nbsp;
+             <a href="https://icons8.com"><img src="data:image/png;base64,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"></a>        
+         </h1>   
+     </header>
 
-            <div class="row">
-                <div class="col-lg-12  col-md-12 gamebox">
-                      <h3> Javascript Word Guess Game</h3>
-                      <p>Instructions: Press any Key to start!</p>
-               </div>
-          </div>
+     <div class = "hangmangamebox">
+         <h3 id = "instructions"> Instructions</h3>
+         <p> Press any key to start game</p>
+         <br>
+         <h3>Word Guess</h3>
+         <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
+         <br>
+         <h3>Incorrect Guesses: </h3> <span id="wrong-guesses"></span>
+         <h3>Guesses Left: </h3> <span id="guesses-left">9</span>
+         <h3>Wins: </h3> <span id="win-counter">0</span>
+         <h3>Losses: </h3> <span id="loss-counter">0</span>   
+     </div>
 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 gamebox">
-                     <h3>Word Guess</h3>
-                     <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3>
-                </div>
-             </div>
-  
-            <div class="row">
-                 <div class="col-lg-12 col-md-12 gamebox">
-                       <h3>Incorrect Guesses: </h3> <span id="wrong-guesses"></span>
-                </div>
-           </div>
-
-          <div class="row ">
-                <div class="col-md-4  gamebox">
-                   <h3>Guesses Left: </h3> <span id="guesses-left">9</span>
-              </div>
-      
-      
-               <div class="col-md-4 gamebox">
-                  <h3>Wins: </h3> <span id="win-counter">0</span>
-              </div>
-       
    
-               <div class="col-md-4  gamebox">
-                  <h3>Losses: </h3> <span id="loss-counter">0</span>
-               </div>
-          </div>
 
-  </div>
-
+     <footer>
+       <p> My Other Games:  </p>
+       <p> ccodes &copy; </p>
+     </footer>
   
   <script src="assets/javascript/game.js"></script>
 </body>
