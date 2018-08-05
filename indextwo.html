@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Latest compiled and minified CSS -->
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "assets/css/style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Hangman</title>
 </head>
@@ -23,47 +24,80 @@
        <!--=========Header==================-->
    
    
-  <div class = "container">
-    <div class = "row mx-auto">
+       <!--==========Game Area Starts===============-->
+       <div class = "container">
 
-       <div class = "col-md-12 col-lg-12">
-         <!-- Button to Open the Modal -->
-         <button type="button" class="btn btn-dark btn-lg btn-block" data-toggle="modal" data-target="#myModal">
-            Instructions
-          </button>
-         <!-- The Modal -->
-         <div class="modal" id="myModal">
-         <div class="modal-dialog">
-            <div class="modal-content">
-        <!-- Modal body -->
-        <div class="modal-body">
-          Press Any Key to Start Game
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
 
-       </div>
-
-        <div class = "col-md-12 col-lg-12 text-center mt-5">
-            <a class="btn btn-dark btn-lg btn-block" href="indextwo.html" role="button">Play Game</a>
-        </div>
-
-     </div>
- </div>
+            <div class = "row card-columns"> 
    
+                    <div class="col-md-12 col-lg-12">
+                          <div class = "card">
+                              <div class = "card-header text-white" style="background-color:black;">
+                                   <h4 class = " text-center">Word to Guess:</h4>
+                              </div>
+                              <div class = "card-body text-center">
+                                   <h4 class = "text-center" id = "word-blanks">_ _ _ _ _ _ _ _</h4>
+                              </div>
+                          </div>
+                    </div>
+            </div>
+         
 
+            <div class = "row card-columns">
+        
+                    <div class="col-md-6 col-lg-6">
+                            <div class = "card">
+                                <div class = "card-header text-white" style="background-color:black;">
+                                     <h4 class = "text-center">Wrong Guesses</h4>
+                                </div>
+                                <div class = "card-body">
+                                     <span id = "wrong-guesses"></span>
+                                </div>
+                            </div>
+                      </div>
+
+                      <div class="col-md-4 col-lg-6">
+                            <div class = "card">
+                                <div class = "card-header text-white "style="background-color:black;">
+                                     <h4 class = " text-center">Guesses Left:</h4>
+                                </div>
+                                <div class = "card-body text-center">
+                                     <span id = "guesses-left"></span>
+                                </div>
+                            </div>
+                      </div>
+     
+        
+              
+   
+   
+               <div class="col-md-3 col-lg-3 mx-auto">
+                       <div class = "card">
+                           <div class = "card-header text-white "style="background-color:black;">
+                                <h4 class = " text-center">Wins and losses</h4>
+                           </div>
+                           <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Wins: <span id = "win-counter"></span></li>
+                            <li class="list-group-item">Losses: <span id = "loss-counter"></span></li>
+                          </ul>
+                       </div>
+                 </div>
+
+           </div> <!--Row 1 Div ends-->
+   
+   
+       </div> <!--Container Div ends-->
+   
+   
+       <!--==========Game Area Ends===============-->
+   
+       <a class="btn btn-primary" href="index.html" role="button">Go Back</a>
+   
        <!--==========Footer===============--> 
          <footer>
-             <a class="btn btn-outline-dark" href="https://christinecodes.github.io/gamevault/" role="button">Game Vault</a>
+             <a class="btn btn-primary" href="https://christinecodes.github.io/gamevault/" role="button">Game Vault</a>
              <p> ccodes &copy; </p>
-         </footer>
+           </footer>
        <!--==========Footer Ends===============-->
    
        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>

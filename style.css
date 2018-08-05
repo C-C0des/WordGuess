@@ -7,16 +7,16 @@ body{
     color:black;
     padding:20px;
     text-align: center;
-    margin-bottom:40px;
+    margin-bottom:110px;
 }
 
 footer{
     background:#ffd700;
+    position: fixed;
     width:100%;
     bottom:0;
     padding:10px;
     color:black;
     text-align: center;
-    margin-top:30px;
+    margin-top:5px;
 }
-
