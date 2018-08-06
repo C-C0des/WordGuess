@@ -120,7 +120,7 @@ function startGame() {
 }
 
 
-function checkLetters(letter) {
+function checkLetters(e,t) {
 
    var letterInWord = false;
    var incorrectLetter = null;
@@ -174,9 +174,15 @@ function roundComplete() {
 
 startGame();
 
-document.onkeyup = function(event) {
-  var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
- 
-  checkLetters(letterGuessed);
+
+ document.onkeyup = function lettersOnly (event) {
+  var char = event.which; 
+
+  if (char > 31 && char != 32 && (char < 65 || char > 90 && char <97 || char >122)){
+    return false;
+  }
+
+
+  checkLetters(letter);
   roundComplete();
 };
